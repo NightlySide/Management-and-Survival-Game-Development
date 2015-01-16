@@ -2,7 +2,7 @@
 
 Character::Character()
 {
-	//ctor
+
 }
 
 Character::~Character()
@@ -13,4 +13,9 @@ Character::~Character()
 void Character::setHealth(int val)
 {
 	statut.health = val;
+}
+
+char Character::getName()
+{
+    return *m_name;
 }
