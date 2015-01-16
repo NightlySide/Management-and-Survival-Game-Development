@@ -2,7 +2,7 @@
 
 Character::Character()
 {
-
+    m_name = "John";
 }
 
 Character::~Character()
@@ -15,7 +15,7 @@ void Character::setHealth(int val)
 	statut.health = val;
 }
 
-char Character::getName()
+std::string Character::getName()
 {
-    return *m_name;
+    return m_name;
 }

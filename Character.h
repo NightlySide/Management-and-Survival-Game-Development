@@ -16,12 +16,12 @@ class Character
 		Stat statut;
 
 		void setHealth(int val);
-		char getName();
+		std::string getName();
 
 	protected:
 	private:
-	    char m_name[100];
-	    char m_race[100];
+	    std::string m_name[100];
+	    std::string m_race[100];
 };
 
 #endif // CHARACTER_H
