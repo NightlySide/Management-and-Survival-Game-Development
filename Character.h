@@ -1,7 +1,8 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-#include <vector>
+#include <string>
+
 class Character
 {
 	public:
@@ -16,12 +17,12 @@ class Character
 		Stat statut;
 
 		void setHealth(int val);
-		std::string getName();
+		std::string getName() const;
 
 	protected:
 	private:
-	    std::string m_name[100];
-	    std::string m_race[100];
+	    std::string m_name;
+	    std::string m_race;
 };
 
 #endif // CHARACTER_H

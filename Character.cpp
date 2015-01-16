@@ -15,7 +15,7 @@ void Character::setHealth(int val)
 	statut.health = val;
 }
 
-std::string Character::getName()
+std::string Character::getName() const
 {
     return m_name;
 }
