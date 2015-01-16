@@ -18,6 +18,7 @@ class Character
 
 		void setHealth(int val);
 		std::string getName() const;
+		void changeName(std::string newName);
 
 	protected:
 	private:
