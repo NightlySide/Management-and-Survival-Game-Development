@@ -1,13 +1,14 @@
 #include <iostream>
-#include "Inventory.h"
 #include "Character.h"
-#include "Djikstra.h"
-
-#include <list>
 
 using namespace std;
 
-int main()
+int main(int argc, char *argv[])
 {
-    return 0;
+	Character perso;
+
+	cout<<perso.statut.health<<endl;
+	perso.setHealth(500);
+	cout<<perso.statut.health;
+	return 0;
 }

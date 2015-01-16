@@ -1,38 +1,16 @@
 #include "Character.h"
 
-Character::Character(std::string g_name, std::string g_race)
+Character::Character()
 {
-    name = g_name;
-    race = g_race;
+	//ctor
 }
 
-int Character::getLife()
+Character::~Character()
 {
-    return life;
+	//dtor
 }
 
-std::string Character::getName()
+void Character::setHealth(int val)
 {
-    return name;
-}
-
-std::string Character::getRace()
-{
-    return race;
-}
-
-std::map<std::string, int> Character::getStats()
-{
-    return stats;
-}
-
-Inventory Character::getInventory()
-{
-    return inventory;
-}
-
-std::string Character::getStatus()
-{
-    std::string status = "Name : " + getName() + " | Vie : " + " | Arme : ";
-    return status;
+	statut.health = val;
 }
