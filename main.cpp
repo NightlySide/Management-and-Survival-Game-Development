@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Animal.h"
+#include "Character.h"
 
 using namespace std;
 
@@ -23,5 +24,11 @@ int main(int argc, char *argv[])
         cout << "Can swim : " << animals[i].canSwim() << endl;
         cout << "+--------------------+" << endl << endl;
     }
+
+    Character perso;
+    Item epee = Item("Epee","arme",40);
+    perso.getInventory()->addItem(epee);
+    cout << "Name: " << perso.getInventory()->getItemById(0).getName() << endl;
+    cout << "Damage: " << perso.getInventory()->getItemById(0).getDamage() << endl;
 	return 0;
 }
