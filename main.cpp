@@ -23,5 +23,6 @@ int main(int argc, char *argv[])
         cout << "Can swim : " << animals[i].canSwim() << endl;
         cout << "+--------------------+" << endl << endl;
     }
+    cout << "End of test" << endl;
 	return 0;
 }
