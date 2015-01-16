@@ -14,5 +14,6 @@ int main()
 
     cout << david.getStatus() << endl;
     cout << "End of programm." << endl;
+    cout << "Hello" << endl;
     return 0;
 }
