@@ -16,6 +16,7 @@ class Animal
         std::string m_race;
         bool m_canFly;
         bool m_canSwim;
+        std::pair<int, int> m_pos;
 };
 
 #endif // ANIMAL_H
