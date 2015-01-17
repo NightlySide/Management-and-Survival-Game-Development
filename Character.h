@@ -14,7 +14,7 @@ class Character
 
 		struct Stat
 		{
-			int health=100;
+			int health;
 		};
 		Stat statut;
 
@@ -22,11 +22,15 @@ class Character
 		std::string getName() const;
 		void changeName(std::string newName);
 		Inventory* getInventory();
+		std::pair<int, int> getPos();
+		void setPos(std::pair<int, int> pos);
+		void setPos(int pos_x, int pos_y);
 
 	protected:
 	private:
 	    std::string m_name;
 	    std::string m_race;
+	    std::pair<int, int> m_pos;
 	    Inventory* m_inventory;
 };
 
