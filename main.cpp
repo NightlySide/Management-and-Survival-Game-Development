@@ -17,6 +17,20 @@ int main(int argc, char *argv[])
         9: Vide*/
     bool isPassable[10] = {true, true, true, false, false, false, false, false, true, false};
     //no = 6,9,10
+    /* Map = (0 = passable, X=non-passable, S=début, A=arrivée)
+        S000
+        00XX
+        0XX0
+        0000
+        XX00
+        000X
+        0XX0
+        0000
+        XXX0
+        0AX0
+        0XX0
+        0000
+    */
     int tileMap[Y][X] = {{0,0,0,0},
                          {0,0,3,3},
                          {0,3,3,0},
@@ -24,12 +38,17 @@ int main(int argc, char *argv[])
                          {3,3,0,0},
                          {0,0,0,3},
                          {0,3,3,0},
-                         {0,0,0,0}
+                         {0,0,0,0},
+                         {3,3,3,0},
+                         {0,0,3,0},
+                         {0,3,3,0},
+                         {0,0,0,0},
                         };
-    vector<int> path = pathfinding(3, 27, tileMap, isPassable);
+    vector<int> path = pathfinding(3, 37, tileMap, isPassable);
     for (int i = 0; (unsigned)i<path.size(); i++)
     {
         cout << path.at(i) << " ";
     }
-	return 0;
+
+    return 0;
 }
