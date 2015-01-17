@@ -4,6 +4,7 @@ Character::Character()
 {
     m_name = "John";
     m_inventory = new Inventory();
+    statut.health = 100;
 }
 
 Character::~Character()
@@ -29,4 +30,19 @@ std::string Character::getName() const
 void Character::changeName(std::string newName)
 {
 	m_name=newName;
+}
+
+std::pair<int, int> Character::getPos()
+{
+    return m_pos;
+}
+
+void Character::setPos(std::pair<int,int> pos)
+{
+        m_pos = pos;
+}
+
+void Character::setPos(int pos_x, int pos_y)
+{
+        m_pos = std::make_pair(pos_x, pos_y);
 }
