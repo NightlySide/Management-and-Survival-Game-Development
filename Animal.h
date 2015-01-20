@@ -11,6 +11,9 @@ class Animal
         std::string getRace();
         bool canFly();
         bool canSwim();
+        std::pair<int, int> getPos();
+        void setPos(std::pair<int, int> pos);
+        void setPos(int pos_x, int pos_y);
     protected:
     private:
         std::string m_race;
